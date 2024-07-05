@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+    website:
+        image: hannahsite
+
+        ports:
+            - "8081:443"
+        volumes:
+            - "/docker/hannahsite/ssl/domain.crt:/etc/ssl/certs/website.crt"
+            - "/docker/hannahsite/ssl/domain.key:/etc/ssl/private.key"
