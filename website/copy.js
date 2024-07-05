@@ -1,4 +1,4 @@
-function copyToClipboard(textToCopy, popupId) {
+function copyToClipboard(textToCopy) {
 
 
     const tempTextArea = document.createElement("textarea");
@@ -12,5 +12,5 @@ function copyToClipboard(textToCopy, popupId) {
 
 
     document.body.removeChild(tempTextArea);
-    alert("Copied");
+    alert("Copied username to Clipboard");
 }

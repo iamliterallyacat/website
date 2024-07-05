@@ -1,8 +1,8 @@
 @import url("https://www.nerdfonts.com/assets/css/webfont.css");
 
 body {
-    background-color: #110111;
-    color: #ffe7f9;
+    background-color: #420021;
+    color: #380d0d;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -14,12 +14,12 @@ body {
 }
 
 .content {
-    color: #ffd5f6;
+    color: #fdcdff;
     padding: 20px;
     border-radius: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 50px #7a0b3fff;
     text-align: left;
-    background-color: #250021;
+    background-color: #7a0b3f;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -53,6 +53,42 @@ body {
     pointer-events: none;
 }
 .h1button {
-    color: #ffd5f6;
+    color: #fdcdff;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+.h1button:hover {
+    transition: all 0.3s ease;
+    color: #420021
+}
+#left {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -10%;
+    width: 10%;
+    height: 90%;
+}
+
+.nav-tab {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #fdcdff;
+    font-size: 2vw;
+    background-color: #7a0b3f;
+    margin: 10%;
+    border-radius: 10px;
+    height: 30px;
+    box-shadow: 0 0px 50px #7a0b3fff;
+    transition: all 0.5s ease;
+}
+.nav-tab:hover {
+  color: #7a0b3f;
+  background: #fdcdff;
+  transition: all 0.5s ease;
 }

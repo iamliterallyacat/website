@@ -1,0 +1,33 @@
+#h1 {
+    max-height: 10%;
+    content: center;
+    display: flex;
+    color: #fdcdff;
+    padding: 20px;
+    text-align: center;
+    background-color: #5a0b2f;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 20px;
+    position: relative;
+
+
+}
+
+body {
+    background-color: #420021;
+    overflow: scroll;
+
+}
+
+img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+#sharks {
+    position: absolute;
+    top: 20%;
+}
