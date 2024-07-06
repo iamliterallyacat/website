@@ -7,7 +7,7 @@ function copyToClipboard(textToCopy) {
 
 
     tempTextArea.select();
-    tempTextArea.setSelectionRange(0, 99999);
+    tempTextArea.setSelectionRange(0, 9999);
     document.execCommand("copy");
 
 
