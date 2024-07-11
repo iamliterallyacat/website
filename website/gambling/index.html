@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <title>Gambling :D</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <script>
+    var counter = 0;
+    var wins = 0;
+    function generateRandomNumbers() {
+    var counter = localStorage.getItem("wins");
+    var counter = localStorage.getItem("counter");
+    counter = counter ? parseInt(counter) : 0;
+    var randomNumber1 = Math.floor(Math.random() * 999);
+    counter++;
+    if (randomNumber1 == 727) {
+        wins++;
+        localStorage.setItem("wins", wins);
+        document.getElementById("soundEffect").play();
+    }
+    localStorage.setItem("counter", counter);
+    document.getElementById("counterDisplay").innerText = counter;
+    document.getElementById("randomNumberDisplay1").innerText = randomNumber1;
+    document.getElementById("winsDisplay").innerText = wins;
+    }
+
+    </script>
+<body>
+<div id="background"><img id="background" src=inspiration/background.jpeg> </img></div>
+<div id="heading"><h1>LET'S GO GAMBLING</h1>
+
+<div id="inspiration"><a id="inspiration" href="inspiration.html"><h2><em>inspiration</em><h2></a> </div>
+
+</div>
+<audio id="soundEffect" src="./win.mp3" preload="auto"></audio>
+
+<div id="game">
+        <button id="gambleButton" onclick="generateRandomNumbers()"><b>Gamble :D</b></button>
+        <div id="numbers">
+            <div class="number"><h3 class="display" id="randomNumberDisplay1"><b>LET'S SEE :D</h3><p>Number u got</p></b> </div>
+            <div class="number"><h3 class="display"><b>727</h3><p>Winning Number</p></b></div>
+            <div class="number"><h3 class="display" id="counterDisplay"><b>0</h3><p>Attempts</p></b></div>
+            <div class="number"><h3 class="display" id="winsDisplay"><b>0</h3><p>Wins</p></b></div>
+        </div>
+</div>
+
+
+</body>

@@ -1,0 +1,126 @@
+#heading {
+    color: #fdcdff;
+    margin: auto;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0 0px 50px #7a0b3fff;
+    text-align: center;
+    background-color: #7a0b3f;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    z-index: 1;
+    max-width: 800px;
+    position: relative;
+}
+#inspiration {
+    color: #fdcdff;
+    text-align: center;
+    background-color: #7a0b3f;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gambling {
+    text-decoration: none;
+    align-content: center;
+    color: #fdcdff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 0px 50px #7a0b3fff;
+    text-align: center;
+    background-color: #7a0b3f;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    z-index: 1;
+    position: relative;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+
+.inspiration {
+    height: 300px;
+    max-width: 40%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#game {
+    margin-left: auto;
+    margin-top: 10%;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #7a0b3f;
+    z-index: 1;
+    position: relative;
+    border-radius: 40px;
+}
+#gambleButton {
+    background-color: #6a012f;
+    box-shadow: 0px 0px 10px #6a002f inset;
+    border: none;
+    color: #fdcdff;
+    padding: 32px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gambleButton:hover {
+    color: #7a0b3f;
+    background-color: #fdcdff;
+    transition: all 0.5s ease;
+}
+
+
+#numbers {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+.number {
+    text-align: center;
+    background-color: #6a012f;
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 12px;
+    color: #fdcdff;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+.display {
+    margin-bottom: 10%;
+}
