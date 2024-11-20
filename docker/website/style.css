@@ -1,19 +1,17 @@
 @import url("https://www.nerdfonts.com/assets/css/webfont.css");
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     background-color: #420021;
     color: #380d0d;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-    position: relative;
-    overflow: hidden;
 }
 
 .content {
+    margin: 5%;
     color: #fdcdff;
     padding: 20px;
     border-radius: 40px;
@@ -43,14 +41,22 @@ body {
     border-radius: 20px;
 }
 
-#particles-js {
+.background {
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     z-index: 0;
-    pointer-events: none;
+}
+.gambling:hover {
+color: #fdcdff;
+transition: all 0.3s ease;
+}
+.gambling {
+transition: all 0.3s ease;
+color: #7a0b3f;
+}
+
 }
 .h1button {
     color: #fdcdff;
@@ -62,28 +68,25 @@ body {
     color: #420021
 }
 #left {
-    z-index: 1;
     display: flex;
-    flex-direction: column;
-    position: relative;
-    left: -10%;
-    width: 10%;
-    height: 90%;
+    z-index: 1;
+    max-width: 50%;
+    justify-content: row;
 }
 
 .nav-tab {
+    height: 40px;
+    witdth: 40px;
+    float: left;
     text-align: center;
     text-decoration: none;
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
     color: #fdcdff;
-    font-size: 2vw;
+    font-size: 17px;
     background-color: #7a0b3f;
     margin: 10%;
     border-radius: 10px;
-    height: 30px;
     box-shadow: 0 0px 50px #7a0b3fff;
     transition: all 0.5s ease;
 }
@@ -92,3 +95,4 @@ body {
   background: #fdcdff;
   transition: all 0.5s ease;
 }
+
